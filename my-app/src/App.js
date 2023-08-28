@@ -1,15 +1,30 @@
+// Модули
 import React from "react";
-import PaintingList from "./components/PaintingList";
-import Panel from "./components/Panel"
-import paintings from "./paintings.json";
+// Компоненты
+import PaintingList from "./components/PaintingList/PaintingList";
+import Panel from "./components/Panel/Panel"
+import ColorPicker from './components/ColorPicker/ColorPicker'
 
+// Стили
+import paintings from "./paintings.json";
+import './components/PaintingList/PaintingList.css'
+
+const colorPickerOptions = [
+  { label: 'red', color: '#F44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#E91E63' },
+  { label: 'indigo', color: '#3F51B5' },
+]
 
 const App = () => {
   return (
     <div>
+      <ColorPicker options={colorPickerOptions} />
         <Panel title="Последние новости">
             <p>fdgdfgfhfghjhjkhjkjhkhjkh</p>
-            <a href="">Читать...</a>
+            <a href="https://www.youtube.com/@itgid/playlists">Читать...</a>
         </Panel>
 
         <Panel>
