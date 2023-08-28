@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../Logo/Logo';
 
 const styles = {
   header: {
@@ -7,6 +8,10 @@ const styles = {
   },
 };
 
-const AppBar = () => <header style={styles.header}></header>;
+const AppBar = () => (
+  <header style={styles.header}>
+    <Logo text="ЛОГО" />
+  </header>
+);
 
 export default AppBar;
