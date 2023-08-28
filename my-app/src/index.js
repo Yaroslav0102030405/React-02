@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 import 'modern-normalize/modern-normalize.css';
-import './styles.css'
+import './styles.css';
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // содаем ссылку (пропсы - свойства компонента) тут мы создали вертуальную ссылку
@@ -27,7 +27,6 @@ root.render(
 // синтаксис JSX
 // JSX - выражение это переменная (динамическое значение) {}
 
-
 // // повесили в дом элемент
 // ReactDOM.render(template, document.getElementById("root"));
 
@@ -35,5 +34,5 @@ root.render(
 
 // Картинки ставяться в реакте как переменные
 
-// pro=types - это описание типа для компонентов 
+// pro=types - это описание типа для компонентов
 // Для каждого комппонента где-есть пропсы мы

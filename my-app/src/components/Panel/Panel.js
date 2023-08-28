@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import Styles from ``
+import styles from './Panel.module.css'
 
 const Panel = ({ title, children }) => (
-  <div>
+  <div className={styles.container}>
     {title && <h2>{title}</h2>}
 
     {children}
